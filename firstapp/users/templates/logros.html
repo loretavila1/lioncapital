@@ -1,0 +1,39 @@
+{% include "header.html" %}
+
+{% block content %}
+
+		<br>
+    <div class="container">
+		<div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h5>Logros</h5>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+							<th>Logro</th>
+							<th>Descripción</th>
+							<th>Status</th>
+                            <th>Progreso</th>
+						</tr>
+
+						{% for i in logros %}
+							<tr>
+								<td>{{i.name}}</td>
+								<td>{{i.descripcion}}</td>
+								<td>{{i.status}}</td>
+                                <td> <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div></td>
+							</tr>
+						{% endfor %}
+						
+					</table>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+
+{% endblock content %}
+
+{% include "footer.html" %}

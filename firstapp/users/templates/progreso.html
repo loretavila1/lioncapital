@@ -1,0 +1,41 @@
+{% include "header.html" %}
+{% load static %}
+      <div class="container text-center">
+        <h2>PROGRESO</h2>
+        <p>Bienvenido al apartado de tu progreso, donde podrás 
+            revisar las distintas tareas que realizarás para 
+            poder llegar a ser parte de la red de asesores 
+            más grande del país
+        </p><br><br><br>
+
+        <h3>EL CAMINO DEL LEÓN</h3><br>
+        <div class="col-12">
+            <iframe src="https://drive.google.com/file/d/1QkF0xvtzRI49JbecAwIzlMC7QvvevsE3/preview" width="756" height="428" allow="autoplay"></iframe>
+        </div>
+            
+      </div><br>
+
+
+      <div class="container">
+        <div class="row align-items-center text-center">              
+                <div class="col-3">
+                    <a href="{% url 'experto' %}"><img src="{% static 'img/experto.jpg' %}" width="100%" height="auto"></a>
+                    <p>Camino a Experto</p>
+                </div>
+                <div class="col-3">
+                    <a href="{% url 'asesorando' %}"><img src="{% static 'img/ase.jpg' %}" width="100%" height="auto"></a>
+                    <p>Asesorando</p>
+                </div>
+                <div class="col-3">
+                    <a href="{% url 'liderando' %}"><img src="{% static 'img/liderando.jpg' %}" width="100%" height="auto"></a>
+                    <p>Liderando Leones</p>
+                </div>
+                <div class="col-3">
+                    <a href="{% url 'tribu' %}"><img src="{% static 'img/vector2.png' %}" width="100%" height="auto"></a>
+                    <p>El León de la Tribu</p>
+                </div>
+            </div>
+        </div>
+
+
+{% include "footer.html" %}

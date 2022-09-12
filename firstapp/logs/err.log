@@ -1,0 +1,12 @@
+Watching for file changes with StatReloader
+[12/Sep/2022 17:22:06] "GET /login/ HTTP/1.1" 200 1319
+[12/Sep/2022 17:22:06] "GET /static/lion/Recurso%202.png HTTP/1.1" 304 0
+[12/Sep/2022 17:22:06] "GET /static/lion/Recurso%201.png HTTP/1.1" 304 0
+[12/Sep/2022 17:29:29] "GET / HTTP/1.1" 200 1872
+[12/Sep/2022 17:29:29] "GET /static/lion/Recurso%201.png HTTP/1.1" 200 108577
+/home/loreto/lioncapital/firstapp/firstapp/wsgi.py changed, reloading.
+Watching for file changes with StatReloader
+/home/loreto/lioncapital/firstapp/firstapp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /robots.txt
+[12/Sep/2022 17:51:48] "GET /robots.txt HTTP/1.1" 404 7924

@@ -1,0 +1,643 @@
+[2022-09-12 17:36:31 +0000] [9058] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-lion.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/loreto/lioncapital/firstapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/loreto/lioncapital/firstapp/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: lion
+  default_proc_name: firstapp.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f46537b9090>
+  on_reload: <function OnReload.on_reload at 0x7f46537b91b0>
+  when_ready: <function WhenReady.when_ready at 0x7f46537b92d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f46537b93f0>
+  post_fork: <function Postfork.post_fork at 0x7f46537b9510>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f46537b9630>
+  worker_int: <function WorkerInt.worker_int at 0x7f46537b9750>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f46537b9870>
+  pre_exec: <function PreExec.pre_exec at 0x7f46537b9990>
+  pre_request: <function PreRequest.pre_request at 0x7f46537b9ab0>
+  post_request: <function PostRequest.post_request at 0x7f46537b9b40>
+  child_exit: <function ChildExit.child_exit at 0x7f46537b9c60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f46537b9d80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f46537b9ea0>
+  on_exit: <function OnExit.on_exit at 0x7f46537b9fc0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-09-12 17:36:31 +0000] [9058] [INFO] Starting gunicorn 20.1.0
+[2022-09-12 17:36:31 +0000] [9058] [DEBUG] Arbiter booted
+[2022-09-12 17:36:31 +0000] [9058] [INFO] Listening at: unix:/tmp/gunicorn-lion.sock (9058)
+[2022-09-12 17:36:31 +0000] [9058] [INFO] Using worker: sync
+[2022-09-12 17:36:31 +0000] [9063] [INFO] Booting worker with pid: 9063
+[2022-09-12 17:36:31 +0000] [9064] [INFO] Booting worker with pid: 9064
+[2022-09-12 17:36:31 +0000] [9065] [INFO] Booting worker with pid: 9065
+[2022-09-12 17:36:31 +0000] [9066] [INFO] Booting worker with pid: 9066
+[2022-09-12 17:36:31 +0000] [9067] [INFO] Booting worker with pid: 9067
+[2022-09-12 17:36:31 +0000] [9058] [DEBUG] 5 workers
+[2022-09-12 17:36:46 +0000] [9058] [INFO] Handling signal: int
+[2022-09-12 17:36:46 +0000] [9064] [INFO] Worker exiting (pid: 9064)
+[2022-09-12 17:36:46 +0000] [9063] [INFO] Worker exiting (pid: 9063)
+[2022-09-12 17:36:46 +0000] [9065] [INFO] Worker exiting (pid: 9065)
+[2022-09-12 17:36:46 +0000] [9066] [INFO] Worker exiting (pid: 9066)
+[2022-09-12 17:36:46 +0000] [9067] [INFO] Worker exiting (pid: 9067)
+[2022-09-12 17:36:47 +0000] [9058] [INFO] Shutting down: Master
+[2022-09-12 17:53:24 +0000] [10024] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-lion.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/loreto/lioncapital/firstapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/loreto/lioncapital/firstapp/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: lion
+  default_proc_name: firstapp.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f189b019090>
+  on_reload: <function OnReload.on_reload at 0x7f189b0191b0>
+  when_ready: <function WhenReady.when_ready at 0x7f189b0192d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f189b0193f0>
+  post_fork: <function Postfork.post_fork at 0x7f189b019510>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f189b019630>
+  worker_int: <function WorkerInt.worker_int at 0x7f189b019750>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f189b019870>
+  pre_exec: <function PreExec.pre_exec at 0x7f189b019990>
+  pre_request: <function PreRequest.pre_request at 0x7f189b019ab0>
+  post_request: <function PostRequest.post_request at 0x7f189b019b40>
+  child_exit: <function ChildExit.child_exit at 0x7f189b019c60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f189b019d80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f189b019ea0>
+  on_exit: <function OnExit.on_exit at 0x7f189b019fc0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-09-12 17:53:24 +0000] [10024] [INFO] Starting gunicorn 20.1.0
+[2022-09-12 17:53:24 +0000] [10024] [DEBUG] Arbiter booted
+[2022-09-12 17:53:24 +0000] [10024] [INFO] Listening at: unix:/tmp/gunicorn-lion.sock (10024)
+[2022-09-12 17:53:24 +0000] [10024] [INFO] Using worker: sync
+[2022-09-12 17:53:24 +0000] [10029] [INFO] Booting worker with pid: 10029
+[2022-09-12 17:53:24 +0000] [10030] [INFO] Booting worker with pid: 10030
+[2022-09-12 17:53:24 +0000] [10031] [INFO] Booting worker with pid: 10031
+[2022-09-12 17:53:24 +0000] [10032] [INFO] Booting worker with pid: 10032
+[2022-09-12 17:53:24 +0000] [10033] [INFO] Booting worker with pid: 10033
+[2022-09-12 17:53:24 +0000] [10024] [DEBUG] 5 workers
+[2022-09-12 17:54:06 +0000] [10033] [DEBUG] GET /
+[2022-09-12 17:54:08 +0000] [10032] [DEBUG] GET /login/
+[2022-09-12 17:54:14 +0000] [10033] [DEBUG] GET /
+[2022-09-12 17:56:25 +0000] [10032] [DEBUG] GET /
+[2022-09-12 17:56:26 +0000] [10033] [DEBUG] GET /login/
+[2022-09-12 17:56:29 +0000] [10031] [DEBUG] GET /login/
+[2022-09-12 17:56:29 +0000] [10033] [DEBUG] GET /login/
+[2022-09-12 17:56:30 +0000] [10030] [DEBUG] GET /login/
+[2022-09-12 17:56:30 +0000] [10033] [DEBUG] GET /login/
+[2022-09-12 17:56:31 +0000] [10031] [DEBUG] GET /login/
+[2022-09-12 17:56:32 +0000] [10029] [DEBUG] GET /
+[2022-09-12 17:56:34 +0000] [10032] [DEBUG] GET /login/
+[2022-09-12 17:56:49 +0000] [10031] [DEBUG] POST /login/
+[2022-09-12 17:56:49 +0000] [10032] [DEBUG] GET /index
+[2022-09-12 17:56:59 +0000] [10029] [DEBUG] GET /profile/
+[2022-09-12 17:57:00 +0000] [10032] [DEBUG] GET /logout/
+[2022-09-12 17:57:00 +0000] [10029] [DEBUG] GET /login/
+[2022-09-12 17:57:48 +0000] [10029] [DEBUG] GET /login/
+[2022-09-12 17:58:19 +0000] [10024] [INFO] Handling signal: term
+[2022-09-12 17:58:19 +0000] [10029] [INFO] Worker exiting (pid: 10029)
+[2022-09-12 17:58:19 +0000] [10030] [INFO] Worker exiting (pid: 10030)
+[2022-09-12 17:58:19 +0000] [10031] [INFO] Worker exiting (pid: 10031)
+[2022-09-12 17:58:19 +0000] [10032] [INFO] Worker exiting (pid: 10032)
+[2022-09-12 17:58:19 +0000] [10033] [INFO] Worker exiting (pid: 10033)
+[2022-09-12 17:58:20 +0000] [10024] [INFO] Shutting down: Master
+[2022-09-12 17:58:21 +0000] [10170] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-lion.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/loreto/lioncapital/firstapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/loreto/lioncapital/firstapp/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: lion
+  default_proc_name: firstapp.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd5fbe91090>
+  on_reload: <function OnReload.on_reload at 0x7fd5fbe911b0>
+  when_ready: <function WhenReady.when_ready at 0x7fd5fbe912d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fd5fbe913f0>
+  post_fork: <function Postfork.post_fork at 0x7fd5fbe91510>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd5fbe91630>
+  worker_int: <function WorkerInt.worker_int at 0x7fd5fbe91750>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd5fbe91870>
+  pre_exec: <function PreExec.pre_exec at 0x7fd5fbe91990>
+  pre_request: <function PreRequest.pre_request at 0x7fd5fbe91ab0>
+  post_request: <function PostRequest.post_request at 0x7fd5fbe91b40>
+  child_exit: <function ChildExit.child_exit at 0x7fd5fbe91c60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd5fbe91d80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd5fbe91ea0>
+  on_exit: <function OnExit.on_exit at 0x7fd5fbe91fc0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-09-12 17:58:21 +0000] [10170] [INFO] Starting gunicorn 20.1.0
+[2022-09-12 17:58:21 +0000] [10170] [DEBUG] Arbiter booted
+[2022-09-12 17:58:21 +0000] [10170] [INFO] Listening at: unix:/tmp/gunicorn-lion.sock (10170)
+[2022-09-12 17:58:21 +0000] [10170] [INFO] Using worker: sync
+[2022-09-12 17:58:21 +0000] [10175] [INFO] Booting worker with pid: 10175
+[2022-09-12 17:58:21 +0000] [10176] [INFO] Booting worker with pid: 10176
+[2022-09-12 17:58:21 +0000] [10177] [INFO] Booting worker with pid: 10177
+[2022-09-12 17:58:21 +0000] [10179] [INFO] Booting worker with pid: 10179
+[2022-09-12 17:58:21 +0000] [10178] [INFO] Booting worker with pid: 10178
+[2022-09-12 17:58:21 +0000] [10170] [DEBUG] 5 workers
+[2022-09-12 17:58:31 +0000] [10177] [DEBUG] GET /login/
+[2022-09-12 18:01:51 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 18:01:52 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 18:01:55 +0000] [10179] [DEBUG] GET /profile/
+[2022-09-12 18:01:56 +0000] [10177] [DEBUG] GET /
+[2022-09-12 18:01:57 +0000] [10176] [DEBUG] GET /login/
+[2022-09-12 18:02:47 +0000] [10176] [DEBUG] GET /login/
+[2022-09-12 18:04:16 +0000] [10177] [DEBUG] GET /
+[2022-09-12 18:04:18 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 18:04:21 +0000] [10176] [DEBUG] GET /
+[2022-09-12 18:04:22 +0000] [10175] [DEBUG] GET /login/
+[2022-09-12 18:04:26 +0000] [10176] [DEBUG] POST /login/
+[2022-09-12 18:04:27 +0000] [10178] [DEBUG] GET /index
+[2022-09-12 18:34:27 +0000] [10175] [DEBUG] GET /profile/
+[2022-09-12 18:34:27 +0000] [10175] [ERROR] Error handling request /profile/
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/home/loreto/lioncapital/firstapp/users/views.py", line 104, in profile
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/functional.py", line 266, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/functional.py", line 419, in _setup
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 25, in <lambda>
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 11, in get_user
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 191, in get_user
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 60, in _get_user_session_key
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 53, in __getitem__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 646, in get
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 1866, in _fetch_all
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 84, in __iter__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 306, in get_compiler
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/backends/base/operations.py", line 368, in compiler
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django.db.models.sql.compiler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 136, in handle
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+[2022-09-12 18:34:40 +0000] [10179] [DEBUG] GET /profile/
+[2022-09-12 18:34:40 +0000] [10179] [ERROR] Error handling request /profile/
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/home/loreto/lioncapital/firstapp/users/views.py", line 104, in profile
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/functional.py", line 266, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/functional.py", line 419, in _setup
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 25, in <lambda>
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 11, in get_user
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 191, in get_user
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 60, in _get_user_session_key
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 53, in __getitem__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 646, in get
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 1866, in _fetch_all
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/query.py", line 84, in __iter__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 306, in get_compiler
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/db/backends/base/operations.py", line 368, in compiler
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django.db.models.sql.compiler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 136, in handle
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+  File "/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 733, in resolve_error_handler
+ImportError: cannot import name 'urls' from 'django.conf' (/home/loreto/lioncapital/firstapp/env/lib/python3.10/site-packages/django/conf/__init__.py)
+[2022-09-12 18:36:25 +0000] [10179] [DEBUG] GET /profile/
+[2022-09-12 18:36:30 +0000] [10177] [DEBUG] GET /logout/
+[2022-09-12 18:36:30 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 18:40:21 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 18:40:37 +0000] [10177] [DEBUG] POST /login/
+[2022-09-12 18:40:37 +0000] [10178] [DEBUG] GET /index
+[2022-09-12 18:40:42 +0000] [10177] [DEBUG] GET /profile/
+[2022-09-12 18:40:46 +0000] [10179] [DEBUG] GET /capacitacion/
+[2022-09-12 18:40:46 +0000] [10178] [DEBUG] GET /capacitacion/vendors/bootstrap/bootstrap.min.js
+[2022-09-12 18:40:46 +0000] [10175] [DEBUG] GET /capacitacion/vendors/is/is.min.js
+[2022-09-12 18:40:46 +0000] [10177] [DEBUG] GET /capacitacion/vendors/fontawesome/all.min.js
+[2022-09-12 18:40:46 +0000] [10176] [DEBUG] GET /capacitacion/vendors/@popperjs/popper.min.js
+[2022-09-12 18:40:46 +0000] [10179] [DEBUG] GET /capacitacion/assets/js/theme.js
+[2022-09-12 18:40:49 +0000] [10177] [DEBUG] GET /desarrollos/
+[2022-09-12 18:40:49 +0000] [10176] [DEBUG] GET /desarrollos/vendors/@popperjs/popper.min.js
+[2022-09-12 18:40:49 +0000] [10178] [DEBUG] GET /desarrollos/vendors/is/is.min.js
+[2022-09-12 18:40:49 +0000] [10175] [DEBUG] GET /desarrollos/vendors/fontawesome/all.min.js
+[2022-09-12 18:40:49 +0000] [10179] [DEBUG] GET /desarrollos/vendors/bootstrap/bootstrap.min.js
+[2022-09-12 18:40:49 +0000] [10179] [DEBUG] GET /desarrollos/assets/js/theme.js
+[2022-09-12 18:40:51 +0000] [10175] [DEBUG] GET /manada/
+[2022-09-12 18:40:57 +0000] [10179] [DEBUG] GET /index
+[2022-09-12 18:42:34 +0000] [10179] [DEBUG] GET /desarrollos/
+[2022-09-12 18:42:34 +0000] [10178] [DEBUG] GET /desarrollos/vendors/@popperjs/popper.min.js
+[2022-09-12 18:42:34 +0000] [10177] [DEBUG] GET /desarrollos/vendors/bootstrap/bootstrap.min.js
+[2022-09-12 18:42:34 +0000] [10175] [DEBUG] GET /desarrollos/vendors/is/is.min.js
+[2022-09-12 18:42:34 +0000] [10176] [DEBUG] GET /desarrollos/vendors/fontawesome/all.min.js
+[2022-09-12 18:42:34 +0000] [10179] [DEBUG] GET /desarrollos/assets/js/theme.js
+[2022-09-12 18:42:37 +0000] [10177] [DEBUG] GET /desarrollos/luhm
+[2022-09-12 18:43:05 +0000] [10176] [DEBUG] GET /manada/
+[2022-09-12 19:06:06 +0000] [10177] [DEBUG] GET /profile/
+[2022-09-12 19:06:08 +0000] [10179] [DEBUG] GET /logout/
+[2022-09-12 19:06:08 +0000] [10176] [DEBUG] GET /login/
+[2022-09-12 19:08:01 +0000] [10176] [DEBUG] GET /
+[2022-09-12 19:09:03 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 19:11:11 +0000] [10177] [DEBUG] GET /login/
+[2022-09-12 19:11:15 +0000] [10175] [DEBUG] GET /login/
+[2022-09-12 19:11:15 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 19:11:16 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 19:11:16 +0000] [10176] [DEBUG] GET /login/
+[2022-09-12 19:11:16 +0000] [10177] [DEBUG] GET /login/
+[2022-09-12 19:11:51 +0000] [10177] [DEBUG] GET /login/
+[2022-09-12 19:13:13 +0000] [10177] [DEBUG] GET /login/
+[2022-09-12 19:13:18 +0000] [10176] [DEBUG] GET /
+[2022-09-12 19:13:44 +0000] [10176] [DEBUG] GET /
+[2022-09-12 19:14:05 +0000] [10179] [DEBUG] GET /
+[2022-09-12 19:14:06 +0000] [10178] [DEBUG] GET /
+[2022-09-12 19:14:28 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 19:15:51 +0000] [10175] [DEBUG] GET /
+[2022-09-12 19:15:53 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 19:20:00 +0000] [10177] [DEBUG] GET /login/
+[2022-09-12 19:21:09 +0000] [10175] [DEBUG] GET /
+[2022-09-12 19:21:56 +0000] [10175] [DEBUG] GET /login/
+[2022-09-12 19:22:13 +0000] [10179] [DEBUG] POST /login/
+[2022-09-12 19:22:15 +0000] [10178] [DEBUG] GET /favicon.ico
+[2022-09-12 19:22:26 +0000] [10175] [DEBUG] GET /login/
+[2022-09-12 19:22:39 +0000] [10177] [DEBUG] POST /login/
+[2022-09-12 19:22:44 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 19:22:56 +0000] [10179] [DEBUG] POST /login/
+[2022-09-12 19:22:57 +0000] [10175] [DEBUG] GET /index
+[2022-09-12 19:23:14 +0000] [10177] [DEBUG] GET /index
+[2022-09-12 19:23:26 +0000] [10175] [DEBUG] GET /index
+[2022-09-12 19:25:53 +0000] [10176] [DEBUG] GET /
+[2022-09-12 20:49:43 +0000] [10178] [DEBUG] GET /
+[2022-09-12 21:05:35 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 21:52:19 +0000] [10178] [DEBUG] GET /
+[2022-09-12 21:52:22 +0000] [10175] [DEBUG] GET /login/
+[2022-09-12 21:52:47 +0000] [10179] [DEBUG] GET /index
+[2022-09-12 21:52:58 +0000] [10176] [DEBUG] GET /index
+[2022-09-12 21:52:58 +0000] [10178] [DEBUG] GET /login/
+[2022-09-12 21:53:14 +0000] [10175] [DEBUG] HEAD /
+[2022-09-12 21:53:14 +0000] [10175] [DEBUG] Ignoring EPIPE
+[2022-09-12 21:53:21 +0000] [10179] [DEBUG] GET /index
+[2022-09-12 21:53:21 +0000] [10176] [DEBUG] GET /login/
+[2022-09-12 21:53:29 +0000] [10177] [DEBUG] GET /
+[2022-09-12 21:53:32 +0000] [10178] [DEBUG] GET /
+[2022-09-12 21:53:38 +0000] [10176] [DEBUG] GET /
+[2022-09-12 21:53:40 +0000] [10179] [DEBUG] GET /login/
+[2022-09-12 21:54:17 +0000] [10175] [DEBUG] GET /
+[2022-09-12 21:54:17 +0000] [10177] [DEBUG] GET /robots.txt
+[2022-09-12 21:57:14 +0000] [10177] [DEBUG] GET /
+[2022-09-12 21:57:36 +0000] [10178] [DEBUG] GET /wp-includes/wlwmanifest.xml
+[2022-09-12 21:57:37 +0000] [10175] [DEBUG] GET /wp-content/uploads/2022/03/fast-logo.jpg

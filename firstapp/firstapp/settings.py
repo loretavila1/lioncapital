@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'lion',
         'USER': 'postgres',
         'PASSWORD': 'abla0308@lion',
-        'HOST': 'localhost',
+        'HOST': '64.225.59.215',
         'PORT': '5432',
         }
 }

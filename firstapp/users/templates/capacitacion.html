@@ -1,40 +1,42 @@
 {% include "header.html" %}
 {% load static %}
       <div class="container text-center">
-        <h2>HAGAMOS DINERO JUNTOS</h2>
-        <p>En nuestra sección de Capacitación tendrás a la mano diferentes herramientas que te ayudarán a complementar el proceso de una venta, 
+        <h2 class="fw-bold">HAGAMOS DINERO JUNTOS</h2>
+        <p class="text-secondary">En nuestra sección de Capacitación tendrás a la mano diferentes herramientas que te ayudarán a complementar el proceso de una venta, 
             dando una forma de venderle el desarrollo a nuestros clientes. Estas herramientas nos servirán tanto 
             como para conocer los departamentos de la empresa y comprender cómo funcionan.</p>
             
-      </div>
+      </div><br>
 
       <div class="my-20"></div>
 
       <div class="container align-items-center text-center">
         <div class="row">
             <div class="col-md-4">
-              <a href="{% url 'administracion' %}"><img src="{% static 'img/admin1.png' %}" width="256" height="auto"></a>
-                <p>Administración</p>
+              <a href="{% url 'administracion' %}"><img src="{% static 'img/administracion.png' %}" width="128" height="auto"></a><br>
+                <p><b>Administración</b></p>
             </div>
             <div class="col-md-4">
-              <a href="{% url 'desarrollos' %}"><img src="{% static 'img/des.jpg' %}" width="256" height="auto"></a>
-                <p>Desarrollos</p>
+              <a href="{% url 'desarrollos' %}"><img src="{% static 'img/desarrollo.png' %}" width="128" height="auto"></a>
+                <p><b>Desarrollos</b></p>
             </div>
             <div class="col-md-4">
-              <a href="{% url 'crm' %}"><img src="{% static 'img/coti.jpg' %}" width="256" height="auto"></a>
-                <p>CRM | Cotizaciones</p>
+              <a href="{% url 'crm' %}"><img src="{% static 'img/crm.png' %}" width="128" height="auto"></a>
+                <p><b>CRM | Cotizaciones</b></p>
             </div>
+          </div><br><br>
+          <div class="row">
             <div class="col-md-4">
-              <a href="{% url 'politicas' %}"><img src="{% static 'img/poli.png' %}" width="256" height="auto"></a>
-                <p>Políticas</p>
+              <a href="{% url 'politicas' %}"><img src="{% static 'img/politica.png' %}" width="128" height="auto"></a>
+                <p><b>Políticas</b></p>
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
-              <a href="{% url 'videoconferencias' %}"><img src="{% static 'img/video.png' %}" width="256" height="auto"></a>
-                <p>Videoconferencias</p>
+              <a href="{% url 'videoconferencias' %}"><img src="{% static 'img/videoconferencia.png' %}" width="128" height="auto"></a>
+                <p><b>Videoconferencias</b></p>
             </div>
-        </div>
-      </div>
+          </div>
+        </div><br><br>
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->

@@ -24,12 +24,12 @@
 	display: block;
 	font-size: 32px;
 	font-weight: 700;
-	color: #666;
+	color: white;
 	line-height: 28px
 }
 
 .counter-box.colored {
-      background: goldenrod;
+      background: rgb(1, 4, 64);
 }
 
 .counter-box.colored p,

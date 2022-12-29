@@ -78,6 +78,13 @@ def desarrollos(request):
 
     return render(request, 'desarrollos.html')
 
+def contenido(request):
+
+    if not request.user.is_authenticated: #si el usuario no esta logeado entonces...
+        return HttpResponseRedirect( reverse("login") )
+
+    return render(request, 'contenido.html')
+
 def capacitacion(request):
     
     if not request.user.is_authenticated: #si el usuario no esta logeado entonces...

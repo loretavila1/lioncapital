@@ -16,6 +16,10 @@ def index(request):
 
     return render(request, "index.html")
 
+def principal(request):
+    return render(request, "home.html")
+
+
 #AUTENTICACIÓN
 def register(request):
     if request.method == "POST": #Registrar usuario

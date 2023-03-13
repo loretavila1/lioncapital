@@ -36,6 +36,7 @@ urlpatterns = [
     path('capacitacion/administracion', views.adm, name='administracion'),
     path('capacitacion/crm', views.crm, name='crm'),
     path('capacitacion/politicas', views.pol, name='politicas'),
+    path('capacitacion/legal', views.lgl, name='legal'),
     path('capacitacion/videoconferencias', views.video, name='videoconferencias'),
 
 ]

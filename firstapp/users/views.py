@@ -194,6 +194,9 @@ def cuenta(request):
 def adm(request):
     return render(request, 'admin.html')
 
+def lgl(request):
+    return render(request, 'legal.html')
+
 def crm(request):
     return render(request, 'crm.html')
 
